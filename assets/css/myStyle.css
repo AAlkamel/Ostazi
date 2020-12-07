@@ -48,7 +48,7 @@ button.back-to-top:hover{
 
 .menu-logo{
     float: right;
-    background-color: rgba(255 ,255 ,255,.9);
+    /* background-color: rgba(255 ,255 ,255,.9); */
     padding-left: 20px;
     margin-top: 1px;
     margin-left: 15px;
@@ -109,19 +109,21 @@ header .navbar-toggler, .header .is-fixed .navbar-toggler{
     /* height: 75px; */
     /* max-width: 855px; */
     border-radius: 4px;
-    background-color: #e0e0e0;
+    background-color: #e0e0e03b;
     margin: 0 auto;
+    margin-top: -255px;
 
 }
 
 .search-box{
     padding-bottom: 24px;
-    margin-top: -130px;
+    margin-top: -260px;
+    text-align: center;;
 }
 .out-box{
     direction: rtl;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns:  1fr;
     grid-auto-flow: row;
         
 }
@@ -132,7 +134,7 @@ header .navbar-toggler, .header .is-fixed .navbar-toggler{
 }
 .box-1,.box-2{
     height: 45px;
-    margin: 15px 15px 0;
+    margin: 15px 15px;
 }
 
 .box-1{
@@ -145,7 +147,7 @@ header .navbar-toggler, .header .is-fixed .navbar-toggler{
 .box-2{
     
     display: grid;
-    grid-template-columns: auto 43% 55px;
+    grid-template-columns: auto auto 55px;
     column-gap: 3px;
     margin-right: 15px;
 }
@@ -225,8 +227,9 @@ header .navbar-toggler, .header .is-fixed .navbar-toggler{
 .start-now{
     background-color: #4b4a9f;
     text-align: center;
-    padding: 20px;
-    margin-top: 100px;
+    padding: 32px;
+    padding-top: 118px;
+    margin-top: -88px;
 }
 
 .start-now h1{
@@ -443,7 +446,7 @@ a, .text-primary, .primary li:before, .menu-links .nav > li.active > a, .menu-li
 
 
 .s3 div img{
-    margin-top: -100px;
+    margin-top: -12px;
 }
 footer div {
     text-align: center;
@@ -456,12 +459,66 @@ footer div img{
     background-color: #4b4a9f;
     padding: 15px;
 }
-.last p{
+.last p{ 
+    direction: rtl;
+    color:white;
+}
+.last p a{
+    margin: 0 10px 0 0;
     color:white;
 }
 
-.last ul :first-child ::after{
-    content: '\f099 ';
+@media only screen and (max-width: 991px){
+    .search3 {
+        margin-top: -111px;
+    }
+}
+
+.topbar-left{
+visibility: hidden;
+}
+
+.icons{
+    position: relative;
+    z-index: 1100;
+    top: 456px;
+}
+.icons ul{
+    position: fixed;
+    top: 500 px;
+}
+.icons ul li{
+    /* background-color: aqua; */
+    padding: 2px;
+    padding-left: 4px;
+    padding-top: 0;
+    margin: 4px;
+    margin-left: 0;
+    border-radius: 0 5px 5px 0;
+    width: 25px;
+    height: 25px;
+    color: white;
+}
+.icons ul li a{
+    color: white;
+}
+.icons ul li a:hover{
+    color: #f3bc41;
 }
 
 
+.wh{
+    background-color: #25d366;
+}
+.co{
+    background-color: #4b4a9f;
+}
+.in{
+    background-color: #d50060;
+}
+.tw{
+    background-color: #55acee;
+}
+.fac{
+    background-color: #3a5a99;
+}
